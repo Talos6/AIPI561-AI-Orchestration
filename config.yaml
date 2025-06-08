@@ -1,0 +1,10 @@
+models:
+  tokenizer_model: "bert-base-uncased"
+  embedding_model: "bert-base-uncased"
+  sentiment_model: "distilbert-base-uncased-finetuned-sst-2-english"
+  
+retry:
+  max_attempts: 3
+  backoff_factor: 2
+  min_time_multiplier: 2
+  max_time_multiplier: 16
