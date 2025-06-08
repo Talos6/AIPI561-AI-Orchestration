@@ -19,8 +19,8 @@ A interactive sentiment analysis system with real-time monitoring and comprehens
 
 ```bash
 # Clone repository
-git clone https://github.com/Talos6/AIPI561-AI-ORCHESTRATION.git
-cd AIPI561-AI-ORCHESTRATION
+git clone https://github.com/Talos6/AIPI561-AI-Orchestration.git
+cd AIPI561-AI-Orchestration
 
 # Install dependencies
 pip install -r requirements.txt
