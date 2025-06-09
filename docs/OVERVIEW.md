@@ -11,35 +11,6 @@ This document presents the design, implementation, and evaluation of the sentime
 2. **Real-time Monitoring**: Implement immediate feedback and metrics visualization
 3. **User-Friendly Interface**: Provide an interactive dashboard for all operations
 
-### Success Criteria
-- ✅ Functional sentiment analysis pipeline
-- ✅ Real-time dashboard with interactive text processing
-- ✅ Comprehensive metrics collection and visualization
-- ✅ Configurable retry mechanisms and error handling
-
-## System Design
-
-### Architecture Overview
-The project contains following key components:
-
-1. **Orchestrator**: Central pipeline controller managing the complete workflow
-2. **Action**: Model operations for tokenization, embedding, and sentiment analysis
-3. **Metrics**: In-memory metrics collection and system monitoring
-4. **Dashboard**: Streamlit-based user interface managing the pipeline
-
-### Technology Choices
-
-- **Python**: Primary development language
-- **PyTorch**: Deep learning framework
-- **Transformers (Hugging Face)**: Pre-trained model library with models
-- **Pandas**: Data manipulation for metrics display and processing
-- **Streamlit**: Interactive UI framework
-- **Plotly**: Interactive visualization library for metrics and performance charts
-- **psutil**: System resource monitoring
-- **GPUtil**: GPU utilization monitoring and memory tracking
-- **PyYAML**: Configuration file parsing and management
-- **Tenacity**: Configurable retry mechanisms with exponential backoff
-
 ## Implementation Details
 
 ### Core Components
@@ -121,6 +92,14 @@ def _process_step(self, step_name, data, step_func):
 2. **Graceful Degradation**: Error reporting with continued operation
 3. **User Feedback**: Immediate error notifications in dashboard
 4. **Automatic Recovery**: Retry mechanisms without user intervention
+
+### Test Coverage
+| File | Test File | Coverage |
+|------|-----------|----------|
+| **dashboard.py** | Manual | FE UI testing |
+| **pipeline.py** | Manual |  Logging every steps |
+| **model.py** | Indirect | Via pipeline tests |
+| **monitoring.py** | Indirect | Via FE testing |
 
 ## Dashboard and User Experience
 

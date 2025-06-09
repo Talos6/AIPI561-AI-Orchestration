@@ -6,7 +6,7 @@ A interactive sentiment analysis system with real-time monitoring and comprehens
 
 ### Architecture & Design
 - **[Architecture Documentation](docs/ARCHITECTURE.md)** - Complete system architecture, components, and design patterns
-- **[Technical Writeup](docs/TECHNICAL_WRITEUP.md)** - Detailed implementation analysis and technical insights
+- **[Technical Writeup](docs/OVERVIEW.md)** - Detailed implementation analysis and technical insights
 
 ## 🚀 Quick Start
 
