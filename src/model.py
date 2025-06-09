@@ -33,8 +33,7 @@ class Action:
                 text,
                 return_tensors="pt",
                 padding=True,
-                truncation=True,
-                max_length=self.config["processing"]["max_length"]
+                truncation=True
             )
             return tokens
             
